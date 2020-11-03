@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 * {
   box-sizing: border-box;
@@ -25,13 +26,28 @@ ul {
 li a {
   display: block;
 }
+img{
+  width: 100%;
+}
 
 /* Header/logo Title */
 .header {
   padding: 60px;
   text-align: center;
-  background: #1abc9c;
+  background: #294c7d;
   color: white;
+}
+.h1 , .h2{
+
+  position: relative;
+  animation: test 5s 2;
+  animation-direction: alternate;
+}
+@keyframes test {
+  0%   {left: 0%; top: 0%;}
+  50%   {left: 10%; top: 0%;}
+  100%   {left: -10%; top: 0%;}
+
 }
 
 /* Style the top navigation bar */
@@ -79,18 +95,40 @@ li a {
 }
 
 /* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
+.fakeimg1 {
   width: 100%;
   padding: 20px;
+  margin-bottom:25%;
+}
+.fakeimg2 {
+  width: 100%;
+  padding: 20px;
+  margin-bottom:10%;
+}
+.fakeimg3 {
+  width: 100%;
+  padding: 20px;
+  margin-bottom:25%;
+}
+.fakeimg4 {
+  width: 70%;
+  padding: 20px;
+
+}
+.fakeimg5 {
+  width: 100%;
+  padding: 20px;
+
 }
 
 /* Footer */
 .footer {
+
   padding: 20px;
   text-align: center;
   background: #ddd;
 }
+
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
@@ -102,56 +140,44 @@ li a {
 </head>
 <body>
 
-<!-- Note -->
-<div style="background:yellow;padding:5px">
-  <h4 style="text-align:center">Resize the browser window to see the responsive effect.</h4>
-</div>
+
 
 <!-- Header -->
 <div class="header">
-  <h1>My Website</h1>
-  <p>With a <b>flexible</b> layout.</p>
+  <h1 class="h1">Welcome to my portfolio website</h1>
+  <p class="h2">I'm <b>Md. Abir Hasan Munna</b> </p>
 </div>
 
 <!-- The flexible grid (content) -->
 <div class="row">
   <div class="side">
     <div class="navbar">
+      <center>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#news">Skills</a></li>
+        <li><a href="#contact">About Me</a></li>  
       </ul>
+        </center>
     </div>
     <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
+    <div class="fakeimg1" style="height:200px;"><img src="img/1.jpg" class="w3-round" alt="Norway"></div>
+    <div class="fakeimg2" style="height:200px;"><img src="img/2.PNG" class="w3-round" alt="Norway"></div><br>
+    <div class="fakeimg3" style="height:200px;"> <img src="img/3.jpg" class="w3-round" alt="Norway"></div><br>
+
   </div>
   <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Dec 7, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <h2>Skills</h2>
+    <div class="fakeimg4"><img src="img/4.jpg" class="w3-round" alt="Norway"></div>
     <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <h2>Education</h2>
+    <div class="fakeimg5"> <img src="img/5.jpg" class="w3-round" alt="Norway"> </div>
   </div>
 </div>
 
 <!-- Footer -->
 <div class="footer">
-  <h2>Footer</h2>
+  <h2>MD. ABIR HASAN MUNNA, Sec:B, ID:18511091</h2>
 </div>
 
 </body>
